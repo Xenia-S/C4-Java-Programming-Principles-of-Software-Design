@@ -79,8 +79,6 @@ public class EarthQuakeClient {
 
     public void bigQuakes() {
         EarthQuakeParser parser = new EarthQuakeParser();
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
-        //String source = "data/nov20quakedata.atom";
         String source = "data/nov20quakedatasmall.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);
         System.out.println("read data for "+list.size()+" quakes");
@@ -113,7 +111,6 @@ public class EarthQuakeClient {
     
     public void quakesOfDepth() {
         EarthQuakeParser parser = new EarthQuakeParser();
-        //String source = "data/nov20quakedatasmall.atom";
         String source = "data/nov20quakedata.atom";
         ArrayList<QuakeEntry> list = parser.read(source);
         ArrayList<QuakeEntry> definiteDepth = filterByDepth(list, -4000.0, -2000.0);
@@ -125,15 +122,9 @@ public class EarthQuakeClient {
     
     public void quakesByPhrase() {
         EarthQuakeParser parser = new EarthQuakeParser();
-        
-        //String source = "data/nov20quakedatasmall.atom";
         String source = "data/nov20quakedata.atom";
-        
         ArrayList<QuakeEntry> list = parser.read(source);
-        
-        //ArrayList<QuakeEntry> phraseInTitle = filterByPhrase(list, "end", "Alaska");
         ArrayList<QuakeEntry> phraseInTitle = filterByPhrase(list, "any", "Can");
-        //ArrayList<QuakeEntry> phraseInTitle = filterByPhrase(list, "start", "Quarry Blast");
         
         for(QuakeEntry qe : phraseInTitle) {
             System.out.println(qe);
@@ -151,37 +142,5 @@ public class EarthQuakeClient {
         for (QuakeEntry qe : list) {
             System.out.println(qe);
         }
-        
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
