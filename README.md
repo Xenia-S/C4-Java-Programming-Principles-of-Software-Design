@@ -4,7 +4,7 @@ This course is offered at [Coursera](https://www.coursera.org/) and is a fourth 
 
 ## IMPORTANT NOTE:
 
-Some code should be run in a custom Bluej Development Environment designed by educators at the University of Kent. You can get the IDE from the [Duke University website](https://www.dukelearntoprogram.com//downloads/bluej.php?course=2).
+In this course I used a custom Bluej Development Environment designed by educators at the University of Kent. You can get the IDE from the [Duke University website](https://www.dukelearntoprogram.com//downloads/bluej.php?course=2).
 
 ---
 
