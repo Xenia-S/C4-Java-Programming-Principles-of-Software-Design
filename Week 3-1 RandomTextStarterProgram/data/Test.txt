@@ -1,0 +1,6 @@
+Now lets test getFollows on a file. In the Tester class, write the void method testGetFollowsWithFile with no parameters. This method should create a MarkovOne object, set the training text to a file the user selects (similar to the methods in MarkovRunner), and then call getFollows. Run your program on confucius.txt and look for the characters that follow t. You should get 11548.
+Now lets test getFollows on a file. In the Tester class, write the void method testGetFollowsWithFile with no parameters. This method should create a MarkovOne object, set the training text to a file the user selects (similar to the methods in MarkovRunner), and then call getFollows. Run your program on confucius.txt and look for the characters that follow t. You should get 11548.
+Assignment 2: MarkovFour and MarkovModel
+
+For this assignment you will randomly generate text by predicting possible next characters based on all the characters that follow a substring in the training text, where the substring is made up of more than one character.
+Specifically, for this assignment, you will:
