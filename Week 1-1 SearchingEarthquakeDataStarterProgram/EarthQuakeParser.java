@@ -12,7 +12,7 @@ import org.xml.sax.SAXException;
 
 public class EarthQuakeParser {
     public EarthQuakeParser() {
-        // TODO Auto-generated constructor stub
+        // Auto-generated constructor stub
     }
 
     public ArrayList<QuakeEntry> read(String source) {
@@ -109,23 +109,5 @@ public class EarthQuakeParser {
             System.out.println(loc);
         }
         System.out.println("# quakes = "+list.size());
-
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
