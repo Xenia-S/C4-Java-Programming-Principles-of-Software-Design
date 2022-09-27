@@ -1,11 +1,4 @@
 
-/**
- * Write a description of class MarkovRunner here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import edu.duke.*;
 
 public class MarkovRunner {
@@ -44,8 +37,6 @@ public class MarkovRunner {
     }
     
     public void testHashMap2() {
-        //String st = "this is a test yes this is really a test yes a test this is wow";
-        //printOut(st);
         FileResource fr = new FileResource(); 
         String st = fr.asString(); 
         st = st.replace('\n', ' ');
