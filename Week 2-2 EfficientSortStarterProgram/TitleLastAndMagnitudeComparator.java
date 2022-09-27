@@ -1,11 +1,3 @@
-
-/**
- * Write a description of TitleLastAndMagnitudeComparator here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import java.util.*;
 
 public class TitleLastAndMagnitudeComparator implements Comparator<QuakeEntry> {
