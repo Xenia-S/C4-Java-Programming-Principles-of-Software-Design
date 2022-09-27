@@ -20,7 +20,7 @@ public class MarkovRunnerWithInterface {
         int size = 1000;
         int seed = 531;
         
-        /*MarkovZero mz = new MarkovZero();
+        MarkovZero mz = new MarkovZero();
         runModel(mz, st, size, seed);
     
         MarkovOne mOne = new MarkovOne();
@@ -30,7 +30,7 @@ public class MarkovRunnerWithInterface {
         runModel(mThree, st, size, seed);
         
         MarkovFour mFour = new MarkovFour();
-        runModel(mFour, st, size, seed);*/
+        runModel(mFour, st, size, seed);
         
         EfficientMarkovModel mTwo = new EfficientMarkovModel(5);
         runModel(mTwo, st, size, seed);
