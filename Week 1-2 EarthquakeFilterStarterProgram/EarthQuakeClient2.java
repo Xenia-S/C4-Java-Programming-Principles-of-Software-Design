@@ -3,7 +3,7 @@ import edu.duke.*;
 
 public class EarthQuakeClient2 {
     public EarthQuakeClient2() {
-        // TODO Auto-generated constructor stub
+        // Auto-generated constructor stub
     }
 
     public ArrayList<QuakeEntry> filter(ArrayList<QuakeEntry> quakeData, Filter f) { 
@@ -98,7 +98,7 @@ public class EarthQuakeClient2 {
         String source = "data/nov20quakedata.atom";
         ArrayList<QuakeEntry> list = parser.read(source);
         
-        /*
+        /* ONLY for small test files:
         for(QuakeEntry qe : list) {
             System.out.println(qe);
         }
