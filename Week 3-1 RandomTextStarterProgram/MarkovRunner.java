@@ -1,11 +1,3 @@
-
-/**
- * Write a description of class MarkovRunner here.
- * 
- * @author Duke Software
- * @version 1.0
- */
-
 import edu.duke.*;
 
 public class MarkovRunner {
