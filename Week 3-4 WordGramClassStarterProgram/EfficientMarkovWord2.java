@@ -44,8 +44,6 @@ public class EfficientMarkovWord2 implements IMarkovModel {
                 follows = myMap.get(kGram.toString());
             }
             follows.add(next);
-            //System.out.println("kGram: " + kGram.toString() + ", next: " + next);
-            //System.out.println(follows);
             myMap.put(kGram.toString(), follows);
         }
         return myMap;
@@ -70,7 +68,6 @@ public class EfficientMarkovWord2 implements IMarkovModel {
             }
             index = myRandom.nextInt(follows.size());
             String next = follows.get(index);
-            //System.out.println("key: " + kGram.toString() + ", follows: " + follows + "\n" + "next: " + next);
             sb.append(next);
             sb.append(" ");
             kGram = kGram.shiftAdd(next);
@@ -82,7 +79,6 @@ public class EfficientMarkovWord2 implements IMarkovModel {
         System.out.println("The text has " + myMap.size() + " keys");
         int maxFollows = 0;
         for (String s: myMap.keySet()) {
-            //System.out.println("key: " + s + "; follows:" + myMap.get(s));
             if (myMap.get(s).size() > maxFollows) {
                 maxFollows = myMap.get(s).size();
             }
