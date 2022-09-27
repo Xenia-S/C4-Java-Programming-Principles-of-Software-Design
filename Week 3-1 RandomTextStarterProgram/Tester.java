@@ -1,16 +1,8 @@
-
-/**
- * Write a description of Tester here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 import java.util.*;
 import edu.duke.*;
 
 public class Tester {
     public void testGetFollows() {
-        //           0123456789012345678901234567890123
         String st = "this is a test yes this is a test.ttt";
         MarkovOne markov = new MarkovOne();
         markov.setTraining(st);
@@ -22,9 +14,7 @@ public class Tester {
     public void testGetFollowsWithFile() {
         FileResource fr = new FileResource();
         String st = fr.asString();
-        //System.out.println(st);
         st = st.replace('\n', ' ');
-        //System.out.println(st);
         MarkovOne markov = new MarkovOne();
         markov.setTraining(st);
         ArrayList<String> follows = markov.getFollows("o");
@@ -35,9 +25,7 @@ public class Tester {
     public void testGetFollowsWithFile2() {
         FileResource fr = new FileResource();
         String st = fr.asString();
-        //System.out.println(st);
         st = st.replace('\n', ' ');
-        //System.out.println(st);
         MarkovModel markov = new MarkovModel(2);
         markov.setTraining(st);
         ArrayList<String> follows = markov.getFollows("he");
