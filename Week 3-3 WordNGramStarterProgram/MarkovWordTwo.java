@@ -41,7 +41,6 @@ public class MarkovWordTwo implements IMarkovModel {
             }
             index = myRandom.nextInt(follows.size());
             String next = follows.get(index);
-            //System.out.println("key1: " + key1 + ", key2: " + key2 + ", follows: " + follows + "\n" + "next: " + next);
             sb.append(next);
             sb.append(" ");
             key1 = key2;
