@@ -1,11 +1,3 @@
-
-/**
- * Write a description of class MarkovZero here.
- * 
- * @author Duke Software
- * @version 1.0
- */
-
 import java.util.Random;
 
 public class MarkovZero {
