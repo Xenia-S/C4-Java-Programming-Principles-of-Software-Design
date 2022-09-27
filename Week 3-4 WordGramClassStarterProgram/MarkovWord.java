@@ -61,7 +61,6 @@ public class MarkovWord implements IMarkovModel {
             }
             index = myRandom.nextInt(follows.size());
             String next = follows.get(index);
-            //System.out.println("key: " + key + ", follows: " + follows + "\n" + "next: " + next);
             sb.append(next);
             sb.append(" ");
             kGram = kGram.shiftAdd(next);
