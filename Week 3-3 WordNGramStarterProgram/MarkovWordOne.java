@@ -26,7 +26,6 @@ public class MarkovWordOne implements IMarkovModel {
     }
     
     public void testIndexOf() {
-        //             0    1  2    3 4    5   6    7  8 9      10
         String test = "this is just a test yes this is a simple test";
         String[] testArray = test.split("\\s+");
         
@@ -62,7 +61,6 @@ public class MarkovWordOne implements IMarkovModel {
             }
             index = myRandom.nextInt(follows.size());
             String next = follows.get(index);
-            //System.out.println("key: " + key + ", follows: " + follows + "\n" + "next: " + next);
             sb.append(next);
             sb.append(" ");
             key = next;
