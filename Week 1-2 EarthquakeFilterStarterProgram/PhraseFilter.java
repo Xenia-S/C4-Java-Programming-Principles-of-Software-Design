@@ -1,10 +1,3 @@
-
-/**
- * Write a description of PhraseFilter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class PhraseFilter implements Filter{
     private String where;  // has one of three values: “start”, ”end”, or “any”
     private String phrase;
